@@ -34,6 +34,14 @@ To evaluate our model on ActivityNetv1.3 dataset, run:
 
 ```inference
 sh evaluation.sh
+
+Loading validation Video Information ...
+100% 4728/4728 [00:00<00:00, 9221.40it/s] 
+Inference start
+Inference finished
+Starting Post-Process
+Ending Post-Process
+Detection: average-mAP 35.872 mAP@0.50 54.877 mAP@0.55 51.311 mAP@0.60 47.832 mAP@0.65 44.631 mAP@0.70 40.448 mAP@0.75 35.922 mAP@0.80 31.118 mAP@0.85 25.534 mAP@0.90 17.928 mAP@0.95 9.119
 ```
 
 ## Pre-trained Models
@@ -41,9 +49,8 @@ sh evaluation.sh
 For ease of inference, we have provided the pre-trained model for GSM on ActivityNet.
 You can download pretrained models here:
 
-- [GSM Pretrained](https://drive.google.com/drive/folders/1kG7b0hxktEWE_UmZDok4BN_RmKALhlH_?usp=sharing) trained on ActivityNetv1.3. 
-
->  Place the contents of the folder in `\output`  
+- [[Google Drive]](https://drive.google.com/drive/folders/1kG7b0hxktEWE_UmZDok4BN_RmKALhlH_?usp=sharing) trained on ActivityNetv1.3. 
+>  Place the contents of the folder in `\output` and run evaluation
 
 ## Performance
 
