@@ -1,1 +1,1 @@
-Put the files here
+save checkpoints , results.txt and fig here
