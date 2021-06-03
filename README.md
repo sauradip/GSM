@@ -38,13 +38,16 @@ sh evaluation.sh
 
 ## Pre-trained Models
 
+For ease of inference, we have provided the pre-trained model for GSM on ActivityNet.
 You can download pretrained models here:
 
-- [My awesome model](https://drive.google.com/mymodel.pth) trained on ImageNet using parameters x,y,z. 
+- [GSM Pretrained](https://drive.google.com/drive/folders/1kG7b0hxktEWE_UmZDok4BN_RmKALhlH_?usp=sharing) trained on ActivityNetv1.3. 
 
->📋  Give a link to where/how the pretrained models can be downloaded and how they were trained (if applicable).  Alternatively you can have an additional column in your results table with a link to the models.
+>  Place the contents of the folder in `\output`  
 
-## Results
+## Performance
+
+![](https://github.com/sauradip/GSM/blob/main/Screenshot%202021-06-03%20at%208.02.52%20PM.png)
 
 
 
