@@ -43,8 +43,8 @@ Inference start
 Inference finished
 Starting Post-Process
 Ending Post-Process
-Detection: average-mAP 35.872 mAP@0.50 54.877 mAP@0.55 51.311 mAP@0.60 47.832 mAP@0.65 44.631 mAP@0.70 40.448 
-mAP@0.75 35.922 mAP@0.80 31.118 mAP@0.85 25.534 mAP@0.90 17.928 mAP@0.95 9.119
+Detection: average-mAP 35.954 mAP@0.50 54.968 mAP@0.55 51.479 mAP@0.60 47.625 mAP@0.65 44.342 mAP@0.70 40.620 
+mAP@0.75 36.354 mAP@0.80 31.349 mAP@0.85 25.181 mAP@0.90 18.190 mAP@0.95 9.428
 ```
 
 ## Pre-trained Models
