@@ -2,7 +2,14 @@ import math
 import numpy as np
 import cv2
 import os
+import yaml
 
+
+with open("./config/anet.yaml", 'r', encoding='utf-8') as f:
+        tmp = f.read()
+        config = yaml.load(tmp, Loader=yaml.FullLoader)
+
+path_to_fig = config['testing']['fig_path']
 
 def taylor(hm, coord):
     heatmap_width = hm.shape[0]
@@ -44,10 +51,10 @@ def save_as_img(prop, vid_name, branch):
     prop = prop*255
     
     if branch =="bottom":
-        save_path = "/media/phd/SAURADIP5TB/SOLO_NEW_PIC_BOTTOM/"
+        save_path = os.path.join(path_to_fig,"GSM_PIC_BOTTOM")
         cv2.imwrite(os.path.join(save_path,vid_name+".png"), prop)
     else:
-        save_path = "/media/phd/SAURADIP5TB/SOLO_NEW_PIC_TOP/"
+        save_path = os.path.join(path_to_fig,"GSM_PIC_TOP")
         cv2.imwrite(os.path.join(save_path,vid_name+".png"), prop)
 
 
@@ -56,7 +63,7 @@ def save_as_img_feat(im, layer):
     im = np.stack((im,)*3, axis=-1).astype(np.uint8)
     im = cv2.applyColorMap(im, cv2.COLORMAP_JET)
     
-    save_path = "/media/phd/SAURADIP5TB/SOLO_NEW_PIC_FEAT/"
+    save_path = os.path.join(path_to_fig,"GSM_PIC_FEAT")
     if layer=="before":
 
         cv2.imwrite(os.path.join(save_path,"FEAT_BEFORE_.png"), im)
@@ -65,17 +72,3 @@ def save_as_img_feat(im, layer):
     
 
     
-
-
-
-
-
-# hm = gaussian_blur(hm, config.TEST.BLUR_KERNEL)
-#     hm = np.maximum(hm, 1e-10)
-#     hm = np.log(hm)
-#     for n in range(coords.shape[0]):
-#         for p in range(coords.shape[1]):
-#             coords[n,p] = taylor(hm[n][p], coords[n][p])
-
-
-
