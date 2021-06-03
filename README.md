@@ -27,6 +27,8 @@ To train the model in the paper, run this command:
 python gsm_train.py 
 ```
 > You can set all the training hyperparameters in `config/anet.yaml` file
+* The Training Curves will be as follows
+![](https://github.com/sauradip/GSM/blob/main/loss_picture.png)
 
 ## Evaluation
 
