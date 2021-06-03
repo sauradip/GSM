@@ -1,1 +1,1 @@
-Put the files here
+Put the unzipped files here should contain .npy files
