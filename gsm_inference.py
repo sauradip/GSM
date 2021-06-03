@@ -29,6 +29,7 @@ with open("./config/anet.yaml", 'r', encoding='utf-8') as f:
 if __name__ == '__main__':
 
     output_path = config['dataset']['testing']['output_path']
+    im_fig_path = config['testing']['fig_path']
     is_postprocess = True
     if not os.path.exists(output_path + "/results"):
         os.makedirs(output_path + "/results")
@@ -45,7 +46,7 @@ if __name__ == '__main__':
                                               num_workers=8, pin_memory=True, drop_last=False)
 
 
-    im_path ="/media/phd/SAURADIP5TB/SOLO_PIC/"
+    im_path = os.path.join(im_fig_path,"SOLO_PIC")
     
     key_list = list(activity_dict.keys())
     val_list = list(activity_dict.values())
