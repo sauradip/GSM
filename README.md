@@ -1,6 +1,6 @@
-# Proposal-Free Temporal Action Localization with Global Segmentation Mask
+# Proposal-Free Temporal Action Localization with Global Segmentation Mask, ECCV 2022
 
-This repository is the official pytorch implementation of "Proposal-Free Temporal Action Localization with Global Segmentation Mask". 
+
 
 
 ## Requirements
