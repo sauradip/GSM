@@ -1,4 +1,4 @@
-# Proposal-Free Temporal Action Localization with Global Segmentation Mask, ECCV 2022
+# Temporal Action Localization with Global Segmentation Mask Learning, ECCV 2022
 
 
 
